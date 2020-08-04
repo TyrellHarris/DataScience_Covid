@@ -1,48 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Demo Page</title>
+
+        <!-- Bootstrap core CSS-->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template-->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Page level plugin CSS-->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+        <!-- Custom styles for this template-->
+        <link href="css/sb-admin.css" rel="stylesheet">
     <style>
         div.b {
-    text-indent: 50px;
+             text-indent: 50px;
         }
         div.c {
             text-indent: 50px;
         }
-    h4 {
-        text-align: center;
-       
-    }
+        h4 {
+            text-align: center;
+        }
         body {
             background-color: lightgray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+            font-size: large;
         }
         h1 {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 2.3%;
-}
-    h2,h3 {
-        font-family: Arial, Helvetica, sans-serif;
+            padding: 2.3%;
+        }
+        h2,h3 {
         font-size: x-small;
         font-weight: 200;
-    }
-    h4 {
+        }
+        h4 {
         font-weight: 220;
         font-size: xx-large;
-    }
+        }
    
     </style>
     </head>
         <body>
-            <div class="container bg-primary">
+            <div class="container bg-warning">
                 <center>
-                    <h1 class="hidden-xs bg-primary">Coronavirus and Intersectionality: New York City</h1>
+                    <h1 style="font-size: 40px;">Coronavirus and Intersectionality: New York City</h1>
                     <h2 style="font-size: 20px;"> A deep dive into how the Coronavirus pandemic may be exposing citywide and possibly countrywide healthcare inequalities</h2>
                     <h3 style="font-size: 20px;"> A project created by: Tyrell Harris and Christian Okokhere</h3>
                 </center>
             </div>
             <br>
             <div class="container b">
-                <h4 class="bg-danger">Introduction:</h4>
+                <h4 class="bg-secondary">Introduction:</h4>
                 <p> This project was conceptualized just after half an hour of reading various reports about minority populations
                      making up significantly large portions of Coronavirus cases and deaths in cities across the country despite
                      these populations being just that: minorities. We decided to look at one of the biggest hotspots for the pandemic
@@ -50,11 +71,11 @@
                      by Covid-19 compared to other groups. But we also wanted to take it a bit further than that and look at what other variables
                      may have a correlation with high or low case and death numbers, specifically income and what its role may be in this story. What
                      we now have is lots of data to share that gives us a clearer picture of how income and race, and the connections
-                     between them, play an unfortunatly large role in who is currently getting and dying from Coronavirus.
+                     between them, play an unfortunately large role in who is currently getting and dying from Coronavirus.
             </div>
             
             <div class="container c">
-                <h4 class="bg-primary">Racial Demographic of NYC:</h4>
+                <h4 class="bg-warning">Racial Demographic of NYC:</h4>
                     <p>To better understand the visualizations we have created below, some context regarding what type of people live
                         in New York City is provided. Keep in mind that because of the dynamic nature of an ongoing pandemic, there is only so
                         much data regarding the race and ethnicity of cases available. Because of this we will only be looking at data on groups
@@ -62,7 +83,154 @@
                         are not included in any of our calculations.
                     </p>
             </div>
-           
-            
+        <div class="container">
+            <center>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card mb-3">
+                        <div class="card-header">
+                          <i class="fas fa-chart-pie"></i>
+                          %NYC Race Demographic Chart</div>
+                        <div class="card-body">
+                          <canvas id="pieColor" width="100%" height="50"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                </center>      
+            </div>
+
+    <div class="container">
+        <center>
+            <div class="col-sm-12">
+                        <div class="card mb-3">
+                         <div class="card-header">
+                            <i class="fas fa-chart-bar"></i>
+                            NYC Covid Cases by Race</div>
+                            <div class="card-body">
+                                <canvas id="barColor" width="100%" height="50"></canvas>
+                            </div>
+                        </div>
+                    </div>
+        </center>         
+    </div>
+
+        <div class="container">
+            <center>
+                <div class="col-lg-12">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-bar"></i>
+                        NYC Covid Deaths by Race</div>
+                      <div class="card-body">
+                        <canvas id="barShape" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Race Demographic</div>
+                    <div class="card-body">
+                        <canvas id="pieColor2" width="100%" height="50"></canvas>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Covid Cases by Race</div>
+                      <div class="card-body">
+                        <canvas id="pieShape" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Covid Deaths by Race</div>
+                      <div class="card-body">
+                        <canvas id="pieSize" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Hispanic Population</div>
+                      <div class="card-body">
+                        <canvas id="pieSpeed" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Hispanic Covid Cases</div>
+                      <div class="card-body">
+                        <canvas id="pieChart" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        % NYC Hispanic Covid Deaths</div>
+                      <div class="card-body">
+                        <canvas id="pieLast" width="100%" height="50"></canvas>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+            <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-ad-min.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+    <script src="js/demo/chart-bar-demo-2.js"></script>
+    <script src="js/demo/chart-scatter-demo.js"></script>
+    <script src="js/demo/chart-scatter-demo-2.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-pie-demo copy.js"></script>
+    <script src="js/demo/chart-pie-demo-2.js"></script>
+    <script src="js/demo/chart-pie-demo-4.js"></script>
+    <script src="js/demo/chart-pie-demo-3.js"></script>
+    <script src="js/demo/chart-pie-demo-4 copy.js"></script>
+    <script src="js/demo/chart-pie-demo-2 copy.js"></script>
+
+
         </body>
 </html>

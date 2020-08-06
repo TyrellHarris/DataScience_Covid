@@ -58,7 +58,7 @@ var barShape = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true
     }
   }
 });

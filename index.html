@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href=
+      <link rel="stylesheet" href=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,16 +51,32 @@
         font-size: xx-large;
         }
    
+
+
     </style>
     </head>
         <body>
-            <div class="container bg-warning">
+         
+      
+          <div class="containerxl bg-warning">
                 <center>
                     <h1 style="font-size: 40px;">Coronavirus and Intersectionality: New York City</h1>
                     <h2 style="font-size: 20px;"> A deep dive into how the Coronavirus pandemic may be exposing citywide and possibly countrywide healthcare inequalities</h2>
                     <h3 style="font-size: 20px;"> A project created by: Tyrell Harris and Christian Okokhere</h3>
                 </center>
-            </div>
+                
+                <nav class="navbar navbar-default bg-warning">
+                  <div class="container-fluid bg-warning">
+                    <div class="navbar-header bg-warning">
+                      <a style="font-size: 20px;" class="navbar-brand bg-warning" href="page2.html">page2</a>
+                    </div>
+                    <ul class="nav navbar-nav bg-warning">
+                      <li><a style="font-size: 20px;" href="page3.html">page3</a></li>
+                      
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             <br>
             <div class="container b">
                 <h4 class="bg-secondary">Introduction:</h4>
@@ -98,135 +114,6 @@
                     </div>
                 </center>      
             </div>
-
-          <div class="container d">
-            <h4 class="bg-secondary">NYC Borough Covid Case and Death Breakdowns by Race</h4>
-            <p>With this information in mind, the following Coronavirus case and death breakdowns without a doubt suggest that race
-              is a big factor in the contraction of this virus and resulting deaths. Take a look at the following charts, which tell the
-              story of minority communities that have been made more vulnerable to disease than White communities by practices and systems
-              that have been in place for many years.
-            </p>
-          </div>
-
-    <div class="container">
-        <center>
-            <div class="col-sm-12">
-                        <div class="card mb-3">
-                         <div class="card-header">
-                            <i class="fas fa-chart-bar"></i>
-                            NYC Covid Cases by Race (Age Adjusted)</div>
-                            <div class="card-body">
-                                <canvas id="barColor" width="100%" height="50"></canvas>
-                            </div>
-                        </div>
-                    </div>
-        </center>         
-    </div>
-
-        <div class="container">
-            <center>
-                <div class="col-lg-12">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-bar"></i>
-                        NYC Covid Deaths by Race (Age Adjusted)</div>
-                      <div class="card-body">
-                        <canvas id="barShape" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </center>
-        </div>
-
-        <div class="container e">
-            <h4 class="bg-warning">Hipanic and Black communities in NYC are most affected by Coronavirus</h4>
-            <p> And to truly understand how disproportionatly these groups are being hurt compared to the percentage of the population
-             that they actually make up. You have to see them compared side by side.
-            </p>
-        </div>
-
-        
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-3">
-                    <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Race Demographic</div>
-                    <div class="card-body">
-                        <canvas id="pieColor2" width="100%" height="50"></canvas>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Covid Cases by Race</div>
-                      <div class="card-body">
-                        <canvas id="pieShape" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Covid Deaths by Race</div>
-                      <div class="card-body">
-                        <canvas id="pieSize" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-
-        <div class="container bg-secondary">
-          <h4>Black people account for 27% of the population but 50% of the cases and deaths</h4>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Hispanic Population</div>
-                      <div class="card-body">
-                        <canvas id="pieSpeed" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Hispanic Covid Cases</div>
-                      <div class="card-body">
-                        <canvas id="pieChart" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card mb-3">
-                      <div class="card-header">
-                        <i class="fas fa-chart-pie"></i>
-                        % NYC Hispanic Covid Deaths</div>
-                      <div class="card-body">
-                        <canvas id="pieLast" width="100%" height="50"></canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-
-        <div class="container bg-warning">
-          <h4>Hispanic people account for 30% of the population but 48 and 55% of the cases and deaths</h4>
-        </div>
 
             <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

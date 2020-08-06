@@ -56,19 +56,81 @@
         <body>
     <div class="containerxl bg-warning">
         <center>
-            <h1 style="font-size: 40px;">a deep dive into how income effects minority populations</h1>
+            <h1 style="font-size: 40px;">Income Inequality in NYC</h1>
         </center>
         
         <nav class="navbar navbar-default bg-warning">
           <div class="container-fluid bg-warning">
-            <div class="navbar-header bg-warning">
-              <a style="font-size: 20px;" class="navbar-brand bg-warning" href="index.html">page1</a>
+            <div class="row navbar-header bg-warning">
+              <a style="font-size: 20px;" class="navbar-brand bg-warning text-primary col-sm-6" href="index.html">NYC Demographic</a>
+              <a style="font-size: 20px;" class="navbar-brand bg-warning text-primary col-sm-6"  href="page2.html">Coronavirus and Race</a>
             </div>
-            <ul class="nav navbar-nav bg-warning">
-              <li><a style="font-size: 20px;" href="page2.html">page2</a></li>
+              
               
             </ul>
           </div>
         </nav>
       </div>
+
+      <div class="container">
+        <p> We gathered data on the richest and poorest neigborhoods of each NYC Borough to see what type of people are living in certain
+          financial conditions. The goal was to give credence to the idea that minority communities are financially worse off than White communties.
+          These neigborhoods in total only account for 2,152,031 people or less than 27% of the NYC population but these charts still make it very clear which groups
+          are more well off than others.
+
+        </p>
+      </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <center>
+              <i class="fas fa-chart-area"></i>
+              Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
+            </center></div>
+            <div class="card-body">
+              <canvas id="scatterChart" width="100%" height="50"></canvas>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <p>As you can see, one of the richest neighborhoods in Manhattan such as Flatiron District, has a demographic of 69% White, 19%
+        Asian, 7% Hispanic, and 3% Black. While one of the poorest neighborhoods, Lower East-Side, is 2.7% White, 11.5% Black, 38.4% Asian, and 47.4% Hispanic.
+        These sort of trends pop-up for each of the Boroughs' scatter plots.
+      </p>
+    </div>
+
+                <!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Page level plugin JavaScript-->
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-ad-min.min.js"></script>
+
+<!-- Demo scripts for this page-->
+
+<script src="js/charts/cases-bar.js"></script>
+<script src="js/charts/deaths-bar.js"></script>
+<script src="js/charts/deaths-pie.js"></script>
+<script src="js/charts/demographic-pie1.js"></script>
+<script src="js/charts/demographic-pie2.js"></script>
+<script src="js/charts/hispanic-pop-pie.js"></script>
+<script src="js/charts/hispanic-cases-pie.js"></script>
+<script src="js/charts/hispanic-deaths-pie.js"></script>
+<script src="js/charts/cases-pie.js"></script>
+<script src="js/charts/manhattan-plot.js"></script>
+
+      </body>
     </html>

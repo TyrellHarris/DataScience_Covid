@@ -74,10 +74,9 @@
 
       <div class="container">
         <p> We gathered data on the richest and poorest neigborhoods of each NYC Borough to see what type of people are living in certain
-          financial conditions. The goal was to give credence to the idea that minority communities are financially worse off than White communties.
-          These neigborhoods in total only account for 1,440,000 people or less than 27% of the NYC population but these charts still make it very clear which groups
+          financial conditions. The goal was to give credence to the idea that minority communities are more susceptible to Coronavirus partly because they are financially worse off than White communties.
+          These neigborhoods in total only account for around 2.4 million people or 27% of our modified NYC population but these charts still make it very clear which groups
           are more well off than others.
-
         </p>
       </div>
 
@@ -88,7 +87,7 @@
             <div class="card-header">
               <center>
               <i class="fas fa-chart-area"></i>
-              Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
+              ( Manhattan) Blue = Black,  Red = White, Green = Hispanic, Yellow = Asian
             </center></div>
             <div class="card-body">
               <canvas id="scatterChart" width="100%" height="50"></canvas>
@@ -100,7 +99,7 @@
     <div class="container">
       <p>As you can see, one of the richest neighborhoods in Manhattan such as Flatiron District, has a demographic of 69% White, 19%
         Asian, 7% Hispanic, and 3% Black. While one of the poorest neighborhoods, Lower East-Side, is 2.7% White, 11.5% Black, 38.4% Asian, and 47.4% Hispanic.
-        These sort of trends pop-up for each of the Boroughs' scatter plots.
+        These sort of trends pop-up for each of the Boroughs' scatter plots, with white people making up most of the rich communities and minorities making up most of the poor communities..
       </p>
     </div>
     <div class="container">
@@ -110,7 +109,7 @@
             <div class="card-header">
               <center>
               <i class="fas fa-chart-area"></i>
-              Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
+              (Bronx) Blue = Black,  Red = White, Green = Hispanic, Yellow = Asian
             </center></div>
             <div class="card-body">
               <canvas id="scatterChart2" width="100%" height="50"></canvas>
@@ -124,7 +123,7 @@
                 <div class="card-header">
                   <center>
                   <i class="fas fa-chart-area"></i>
-                  Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
+                  (Queens) Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
                 </center></div>
                 <div class="card-body">
                   <canvas id="scatterChart3" width="100%" height="50"></canvas>
@@ -138,13 +137,36 @@
                     <div class="card-header">
                       <center>
                       <i class="fas fa-chart-area"></i>
-                      Blue = Black,  Red = White,  Green = Hispanic,  Yellow = Asian
+                      (Brooklyn) Blue = Black,  Red = White, Green = Hispanic,  Yellow = Asian
                     </center></div>
                     <div class="card-body">
                       <canvas id="scatterChart4" width="100%" height="50"></canvas>
                     </div>
                   </div>
                 </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card mb-3">
+                        <div class="card-header">
+                          <center>
+                          <i class="fas fa-chart-area"></i>
+                          (StatenIsland) Blue = Black,  Red = White, Green = Hispanic, Yellow = Asian
+                        </center></div>
+                        <div class="card-body">
+                          <canvas id="scatterChart5" width="100%" height="50"></canvas>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="Container">
+                    <p>All of this heavily suggests a perpetuating cycle. Since poorer communities are predominantly Hispanic or Black, Covid-19 infects and kills minorities moreso than it does White people.
+                      But it is also most likely that people with less money, regardless of race, are the ones taking the biggest hits from this pandemic.
+                      And with upward mobility being nothing more than a very unlikely dream, minorities will continue to make up the majority of these poor communities and be without
+                      the resources required to seek out quality health care.
+
+                    </p>
+                  </div>
                 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -175,6 +197,7 @@
 <script src="js/charts/bronx-plot.js"></script>
 <script src="js/charts/queens-plot.js"></script>
 <script src="js/charts/Brooklyn-plot.js"></script>
+<script src="js/charts/staten-island-plot.js"></script>
 
       </body>
     </html>

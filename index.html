@@ -50,6 +50,10 @@
         font-weight: 220;
         font-size: xx-large;
         }
+        h5 {
+          font-size: large;
+        }
+    
    
 
 
@@ -63,6 +67,7 @@
                     <h1 style="font-size: 40px;">Coronavirus and Intersectionality: New York City</h1>
                     <h2 style="font-size: 20px;"> A deep dive into how the Coronavirus pandemic may be exposing citywide and possibly countrywide healthcare inequalities</h2>
                     <h3 style="font-size: 20px;"> A project created by: Tyrell Harris and Christian Okokhere</h3>
+                    <h3 style="font-size: 10px;"><a href="https://colab.research.google.com/drive/1hyvmdkHdnNR4dNc6_L41CO9wdlV9h8v6?usp=sharing">link to Google Colab and Sources</a></h3>
                 </center>
                 
                 <nav class="navbar navbar-default bg-warning">
@@ -96,23 +101,37 @@
                         in New York City is provided. Keep in mind that because of the dynamic nature of an ongoing pandemic, there is only so
                         much data regarding the race and ethnicity of cases available. Because of this we will only be looking at data on groups
                         identifying as White, Black, Asian/Pacific Islander, or of Hispanic origin. Native American, Multi-Racial, and Other groups
-                        are not included in any of our calculations.
+                        are not included in any of our calculations. (Mouse over the graphs to interact with them)
                     </p>
             </div>
         <div class="container">
             <center>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-sm-12">
                       <div class="card mb-3">
                         <div class="card-header">
-                          <i class="fas fa-chart-pie"></i>
-                          Out of 7,945,184 people:</div>
+                          <h5>Out of 7,945,184 people:</h5></div>
                         <div class="card-body">
                           <canvas id="pieColor" width="100%" height="50"></canvas>
                         </div>
                       </div>
                     </div>
                 </center>      
+            </div>
+            <div class="container">
+              <center>
+                <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-header">
+                      <h5>% NYC Hispanic Population</h5></div>
+                    <div class="card-body">
+                      <canvas id="pieSpeed" width="100%" height="50"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </center>
             </div>
 
             <!-- Bootstrap core JavaScript-->

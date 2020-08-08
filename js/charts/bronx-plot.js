@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Bar Chart Example
 var ctx = document.getElementById("scatterChart2");
 var neighborhoods = ["Moris Park", "Spencer Estates-country club", "City Island", "Pelham Gardens", "Van Nest", "Mott Haven", "Highbridge", "Hunts Point", "Norwood", "University Heights","Moris Park", "Spencer Estates-country club", "City Island", "Pelham Gardens", "Van Nest", "Mott Haven", "Highbridge", "Hunts Point", "Norwood", "University Heights", "Moris Park", "Spencer Estates-country club", "City Island", "Pelham Gardens", "Van Nest", "Mott Haven", "Highbridge", "Hunts Point", "Norwood", "University Heights", "Moris Park", "Spencer Estates-country club", "City Island", "Pelham Gardens", "Van Nest", "Mott Haven", "Highbridge", "Hunts Point", "Norwood", "University Heights"];
-var colors = ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow'];
+var colors = ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red','green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green','yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow', 'yellow'];
 var scatterChart = new Chart(ctx, {
     type: 'scatter',
     data: {
@@ -13,56 +13,56 @@ var scatterChart = new Chart(ctx, {
        datasets: [{
           pointBackgroundColor: colors,
           data: [{
-            x: 13.8, y: 69631.0,
+            x: 9, y: 69631.0,
           }, {
-            x: 1.4, y: 86869.0,
+            x: 1.0, y: 86869.0,
           }, {
             x: 0, y: 99932.0,
           }, {
-            x: 28, y: 82974.0,
+            x: 26, y: 82974.0,
           }, {
-            x: 47.2, y: 41043.0,
+            x: 17.2, y: 41043.0,
           }, {
-            x: 96.5, y: 24835.0,
+            x: 28.5, y: 24835.0,
           }, {
-            x: 91.2, y: 32295.0
+            x: 31.2, y: 32295.0
           }, {
-            x: 97.2, y: 27762.0
+            x: 35.2, y: 27762.0
           }, {
-            x: 41.9, y: 40276.0
+            x: 13.4, y: 40276.0
           }, {
-            x: 84.9, y:31916.0
+            x: 17.2, y:31916.0
           },
-          { x: 66.1, y: 69631.0 }, 
-          { x: 91.2, y: 86869.0 }, 
-          { x: 91, y: 99932.0 }, 
-          { x: 31.2, y: 82974.0 }, 
-          { x: 38.8, y: 41043.0 },
-          { x: 3.5, y: 24835.0},
-          { x: 8.8, y: 32295.0 }, 
-          { x: 2.7, y: 27762.0 }, 
-          { x: 25.8, y: 40276.0 }, 
-          { x: 5, y: 31916.0 },
-          { x: 53.8, y: 69631.0 }, 
-          { x: 36.1, y: 86869.0 }, 
-          { x: 28.2, y: 99932.0 }, 
-          { x: 35.5, y: 82974.0 }, 
-          { x: 172.1, y: 41043.0 },
-          {x: 241.3, y:24835.0},
-          { x: 191.1, y: 32295.0 }, 
-          { x: 177.71, y: 27762.0 }, 
-          { x: 212.8, y: 40276.0 }, 
-          { x:394.9, y: 31916.0 },
-          { x: 20, y: 69631.0 }, 
-          { x: 1.4, y: 86869.0 }, 
-          { x: 8.9, y: 99932.0 }, 
+          { x: 42.1, y: 69631.0 }, 
+          { x: 71.4, y: 86869.0 }, 
+          { x: 71, y: 99932.0 }, 
+          { x: 29.2, y: 82974.0 }, 
+          { x: 14.3, y: 41043.0 },
+          { x: 1, y: 24835.0},
+          { x: 3, y: 32295.0 }, 
+          { x: 1, y: 27762.0 }, 
+          { x: 8, y: 40276.0 }, 
+          { x: 1, y: 31916.0 },
+          { x: 35, y: 69631.0 }, 
+          { x: 26.4, y: 86869.0 }, 
+          { x: 22, y: 99932.0 }, 
+          { x: 33, y: 82974.0 }, 
+          { x: 63.3, y: 41043.0 },
+          {x: 71, y:24835.0},
+          { x:66, y: 32295.0 }, 
+          { x:64, y: 27762.0 }, 
+          { x: 68, y: 40276.0 }, 
+          { x:80, y: 31916.0 },
+          { x: 13, y: 69631.0 }, 
+          { x: 1, y: 86869.0 }, 
+          { x: 7, y: 99932.0 }, 
           { x: 11, y: 82974.0 }, 
-          { x: 13.8, y: 41043.0 },
+          { x: 5.1, y: 41043.0 },
           {x: 0, y:24835.0},
           { x:0, y: 32295.0 }, 
           { x:0, y: 27762.0 }, 
-          { x: 32.2, y: 40276.0 }, 
-          { x:10, y: 31916.0 },
+          { x: 10.3, y: 40276.0 }, 
+          { x:2, y: 31916.0 }
         ]
        }]
     },

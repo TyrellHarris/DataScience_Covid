@@ -15,5 +15,9 @@ def page2():
 def page3():
     return app.send_static_file('page3.html')
 
+@app.route('/about')
+def about():
+    return app.send_static_file('about.html')
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
